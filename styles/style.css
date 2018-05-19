@@ -56,15 +56,61 @@ main {
   align-items: center;
 }
 
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  font: 1em 'Open Sans', sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #f3ef6f;
+  margin: 0.5em;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus {
+  border-color: #f3ef6f;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  font: 1em 'Open Sans', sans-serif;
+  margin-left: 1em;
+  padding: .5em;
+  border-color: #f3ef6f;
+  background-color: #f3ef6f;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
 .container {
-  display: flex; /* or inline-flex */
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 
 }
 
 .item {
-  display: flex; /* or inline-flex */
+  display: flex;
 }
 
 .column {
@@ -135,7 +181,7 @@ main {
 }
 
 .about {
-  background-color: #cbcacf;
+  background-color: #D4D3D7;
 }
 
 .about-content {
@@ -144,7 +190,7 @@ main {
 }
 
 .stock {
-  background-color: #cbcacf;
+  background-color: #D4D3D7;
   width: 100%;
   justify-content: center;
 }
@@ -181,7 +227,7 @@ main {
 }
 
 .openings {
-  background-color: #cbcacf;
+  background-color: #D4D3D7;
   width: 100%;
   justify-content: center;
 }
@@ -193,20 +239,19 @@ main {
 }
 
 .ebay {
-  background-color: #cbcacf;
+  background-color: #D4D3D7;
   width: 100%;
   justify-content: center;
 }
 
 .ebay-content {
-  background-color: #B3D2D8;
   width: 50%;
   align-items: center;
   padding: 1em;
 }
 
 .contact {
-  background-color: #cbcacf;
+  background-color: #D4D3D7;
   width: 100%;
   justify-content: center;
 }
