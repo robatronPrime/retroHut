@@ -16,19 +16,19 @@
   </head>
   <body>
     <header class="container">
-      <span class="item">
+      <div class="item">
         <img id="logo" src="images/Logo.jpg" alt="Logo">
-        <span class="column">
+        <section class="column">
           <h1>Retro Hut</h1>
           <h2>robdeakin2015@gmail.com 07773 027448</h2>
-        </span>
-      </span>
-      <div class="container no-decoration links">
-        <a href="index.html" class="item spacing">Home</a>
-        <a href="ps.html" class="item spacing">Playsation</a>
-        <a href="xbox.html" class="item spacing">Xbox</a>
-        <a href="sega.html" class="item spacing">Sega</a>
-        <a href="ninten.html" class="item spacing">Nintendo</a>
+        </section>
+      </div>
+      <div id="navigation" class="item container no-decoration links">
+        <a href="index.html" class="item">Home</a>
+        <a href="ps.html" class="item">Playsation</a>
+        <a href="xbox.html" class="item">Xbox</a>
+        <a href="sega.html" class="item">Sega</a>
+        <a href="ninten.html" class="item">Nintendo</a>
         <a href="https://www.facebook.com/retrohutsouthampton1/" class="item spacing">
           <i class="fab fa-facebook-f"></i>
         </a>
@@ -60,23 +60,23 @@
       <div class="about item">
         <section class="item row about-content">
           <img src="images/profile.webp" alt="about-image" class="spacing">
-          <span class="column">
+          <section class="column">
             <h2>What is Retro Hut?</h2>
             <p>
               Retro Hut was established in 2016 with one mission: to bring a real, high quality Video Game Store to the Southampton area. Our passion for excellence is what inspired us in the beginning and it continues to drive us today. We pride ourselves in the superior experience of shopping in our Video Game Store and in the long-term relationships we’ve built with our customers. People come back to Retro Hut because they know they’ll find what they’re looking for on our shelves - and if they don’t, we’ll help them find it. Stop by to see for yourself!
             </p>
-          </span>
+          </section>
         </section>
       </div>
 
       <div class="stock item">
         <section class="item column stock-content">
-          <span class="stock-header">
+          <section class="stock-header">
             <h2>What We Sell</h2>
-          </span>
-          <span class="stock-description">
+          </section>
+          <section class="stock-description">
             <p>We Don't Just Sell Products But We Also Buy Your Unwanted Treasures As Well So Pop In Store.</p>
-          </span>
+          </section>
           <div class="w3-content w3-section spacing slideshow">
             <img class="mySlides2" src="images/slide2-1.webp" alt="slide-image1">
             <img class="mySlides2" src="images/slide2-2.webp" alt="slide-image2" style="padding: 1.6em 0;">
@@ -87,7 +87,7 @@
             <img class="mySlides2" src="images/slide2-7.webp" alt="slide-image6" style="padding: 1.6em 0;">
           </div>
           <div class="item products column links">
-            <div class="item product row product-spacing">
+            <div class="item product row">
               <div class="product-description column">
                 <h2>PlayStation</h2>
                 <h3>Console & Games</h3>
@@ -190,25 +190,25 @@
                 Name:
                 <abbr title="required">*</abbr>
               </label>
-              <input type="text" id="name" name="user_name">
+              <input type="text" id="name" name="user_name" required>
             </p>
             <p>
               <label for="email">
                 Email:
                 <abbr title="required">*</abbr>
               </label>
-              <input type="email" id="email" name="user_email">
+              <input type="email" id="email" name="user_email" required>
             </p>
             <p>
               <label for="subject">
                 Subject:
                 <abbr title="required">*</abbr>
               </label>
-              <input type="text" id="subject" name="subject">
+              <input type="text" id="subject" name="subject" required>
             </p>
             <p>
               <label for="message"> Message: <abbr title="required">*</abbr> </label>
-              <textarea type="text" id="message" name="message"></textarea>
+              <textarea type="text" id="message" name="message" required></textarea>
             </p>
             <div class="button">
               <button type="submit">Send</button>
