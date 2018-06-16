@@ -2,7 +2,6 @@ html,body {
   margin:0px;
   display: flex;
   background: #ab4d37;
-  width: 100%;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -12,7 +11,6 @@ html,body {
 body {
   font-size: calc(16px + 0.5vw);
   line-height: calc(1.1em + 0.5vw);
-  width: 100%;
 }
 
 h1 {
@@ -60,6 +58,7 @@ header {
 main {
   margin-top: 125px;
   align-items: center;
+  width: 100%;
 }
 
 form {
@@ -138,6 +137,22 @@ footer {
 .links a:hover{
   color: #f3ef6f;
   text-decoration: underline;
+}
+
+.links-mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ab4d37;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav-burg {
+  display: none;
 }
 
 .content h1{
@@ -294,6 +309,10 @@ footer {
   padding: 1em;
 }
 
+#main-xbox {
+  width: 100%;
+}
+
 #logo {
   width: 5em;
   height: 100%;
@@ -303,7 +322,7 @@ footer {
 @media (max-width:900px) {
 
   html {
-    width: 54.5em;
+    width: 57.5em;
   }
 
   body {
@@ -311,7 +330,7 @@ footer {
   }
 
   header {
-    height: 15%;
+    height: 12%;
     display: block;
   }
 
@@ -329,24 +348,43 @@ footer {
   }
 
   header div h2 {
-    font-size: 9vw;
+    font-size: 11vw;
     margin: 1.2em 0;
   }
 
+  h3 {
+    font-size: 35px;
+  }
+
   p {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   main {
     margin-top: 218px;
   }
 
+  .links-mobile a {
+    font-size: 15vw;
+    padding: .5em 0;
+  }
+
+  .nav-burg {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1em;
+    padding: 1em 3em;
+  }
+
   .content h1 {
-    font-size: 20vw;
+    font-size: 30vw;
   }
 
   .content h2 {
-    font-size: 10vw;
+    font-size: 15vw;
   }
 
   .welcome-content {
@@ -364,10 +402,10 @@ footer {
 
   .about-content {
     width: 100%;
+    flex-direction: column;
   }
 
   .about-content img {
-    height: 50%;
     align-self: center;
   }
 
@@ -384,7 +422,7 @@ footer {
   }
 
   .links a {
-    font-size: 10vw;
+    font-size: 15vw;
   }
 
   .ebay-content {
@@ -401,6 +439,30 @@ footer {
 
   input, textarea {
     width: 444px;
+  }
+
+  button {
+    font-size: 2.5em;
+  }
+
+  .stock-page-content {
+    flex-direction: column;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  footer a {
+    width: 11%;
+  }
+
+  footer p {
+    width: 100%;
+  }
+
+  #sega-main {
+    margin-top: 253px;
   }
 
 }

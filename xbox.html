@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </head>
-  <body>
+  <body id="main-xbox">
     <header class="container">
-      <span class="item">
+      <div class="item">
         <img id="logo" src="images/Logo.jpg" alt="Logo">
-        <span class="column">
+        <section class="column">
           <h1>Retro Hut</h1>
           <h2>robdeakin2015@gmail.com 07773 027448</h2>
-        </span>
-      </span>
-      <div class="container no-decoration links">
+        </section>
+      </div>
+      <div id="navigation" class="container no-decoration links">
         <a href="index.html" class="item spacing">Home</a>
         <a href="ps.html" class="item spacing">Playsation</a>
         <a href="xbox.html" class="item spacing">Xbox</a>
@@ -38,6 +38,30 @@
         <a href="https://www.ebay.co.uk/usr/retro-hut2015" class="item spacing">
           <i class="fas fa-shopping-cart"></i>
         </a>
+      </div>
+
+      <div id="links-mobile" class="container no-decoration links-mobile">
+        <a class="item closebtn" href="javascript:void(0)" onclick="closeNav()">
+          <i class="fas fa-times"></i>
+        </a>
+        <a href="index.html" class="item spacing">Home</a>
+        <a href="ps.html" class="item spacing">Playsation</a>
+        <a href="xbox.html" class="item spacing">Xbox</a>
+        <a href="sega.html" class="item spacing">Sega</a>
+        <a href="ninten.html" class="item spacing">Nintendo</a>
+        <a href="https://www.facebook.com/retrohutsouthampton1/" class="item spacing">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.google.com/maps/place/Retro+Hut/@50.9093561,-1.4194467,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5200d607c16cf58a!8m2!3d50.9093561!4d-1.417258" class="item spacing">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <a href="https://www.ebay.co.uk/usr/retro-hut2015" class="item spacing">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+
+      <div id="nav-burg" class="item nav-burg" onclick="openNav();">
+        <i class="fas fa-bars fa-3x"></i>
       </div>
     </header>
 
@@ -70,7 +94,7 @@
         </section>
       </div>
 
-      <footer class="item links">
+      <footer class="container links">
         <a href="https://www.facebook.com/retrohutsouthampton1/" class="item spacing">
           <i class="fab fa-facebook-f"></i>
         </a>
@@ -85,5 +109,17 @@
         <p class="item spacing">48 Shirley Rd, Southampton SO15 3EU, UK</p>
       </footer>
     </main>
+
+    <script>
+    function openNav() {
+      document.getElementById("links-mobile").style.width = "50%";
+      document.getElementById("nav-burg").style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("links-mobile").style.width = "0";
+      document.getElementById("nav-burg").style.display = "flex";
+    }
+    </script>
   </body>
 </html>
