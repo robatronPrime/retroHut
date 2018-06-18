@@ -110,6 +110,25 @@ footer {
   padding: 1em;
 }
 
+.header-content {
+  width: 50%;
+}
+
+.header-text {
+  width: 100%;
+}
+
+.header-text-item {
+  display: block;
+  max-width: 30%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header-text-item p {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +396,14 @@ footer {
     top: 0;
     width: 1em;
     padding: 1em 3em;
+  }
+
+  .header-content {
+    width: 70%;
+  }
+
+  .header-text-item {
+    max-width: 100%;
   }
 
   .content h1 {
